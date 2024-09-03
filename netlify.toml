@@ -1,0 +1,28 @@
+[build]
+  command = "jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+
+[context.production]
+  command = "jekyll build"
+
+[context.deploy-preview]
+  command = "jekyll build --drafts"
+
+[[plugins]]
+  package = "netlify-plugin-jekyll-cache"
+
+[dev]
+  command = "jekyll serve"
+  port = 8888
+  publish = "_site"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
