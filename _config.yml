@@ -1,9 +1,9 @@
 name: Eingabe Ausgabe
 markdown: kramdown
 highlighter: true
-baseurl: /eingabe-ausgabe
-mail: moron-zirfas@fh-potsdam.de 
-exclude: 
+baseurl: /
+mail: fabianmoronzirfas@protonmail.ch
+exclude:
   - .htaccess
   - bin
   - blog

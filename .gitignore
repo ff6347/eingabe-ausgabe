@@ -10,3 +10,4 @@ sketch.properties
 build-tmp
 # codekit
 .codekit-cache
+.jekyll-cache

@@ -12,7 +12,7 @@ title: winter semester 14/15
             <h1 id="headline">
                 {{ page.title }}
             </h1>
-            <img src="{{ site.baseurl }}/images/ldr/ldr-800w.png" alt=" " class="img-responsive" id="chart">
+            <img src="/images/ldr/ldr-800w.png" alt=" " class="img-responsive" id="chart">
             <p class="hello">
                 These are the results from the winter semester 2014/2015. The seminar was split into 3 projects.
             </p>
@@ -80,7 +80,7 @@ title: winter semester 14/15
             {% for student in site.data.wise-1415.students %}
                 {% for thumb in student.algorithm.thumb %}
                 <a href="#{{ student.algorithm.title | make_web_friendly }}">
-                    <img src="{{ site.baseurl }}/images/wise-1415/{{ thumb }}" alt="..." class="img-circle img-teaser">
+                    <img src="/images/wise-1415/{{ thumb }}" alt="..." class="img-circle img-teaser">
                 </a>{% endfor %}
             {% endfor %}
         </div>
@@ -91,8 +91,8 @@ title: winter semester 14/15
     {% for student in site.data.wise-1415.students %}
         <div class="media project-algo well" id="{{ student.algorithm.title  | make_web_friendly }}">
             <a href="{{ student.algorithm.url }}" class="media-left">
-                <img alt=" " src="{{ site.baseurl }}/images/wise-1415/{{ student.algorithm.images[0] }}" class="image hidden-xs">
-                <img alt=" " src="{{ site.baseurl }}/images/wise-1415/{{ student.algorithm.thumb[0] }}" class="thumb hidden-sm hidden-md hidden-lg">
+                <img alt=" " src="/images/wise-1415/{{ student.algorithm.images[0] }}" class="image hidden-xs">
+                <img alt=" " src="/images/wise-1415/{{ student.algorithm.thumb[0] }}" class="thumb hidden-sm hidden-md hidden-lg">
             </a>
             <div class="media-body">
                 <a href="{{ student.algorithm.url }}">
@@ -120,7 +120,7 @@ title: winter semester 14/15
     <div class="col-md-8 col-md-offset-2 intro">
         <div class="media well">
             <h2>Crowdsourcing Data</h2>
-            <p>For this project the students had to create a online survey to gather some data. This data should then be represented in an interactive graphic.</p>{% for student in site.data.wise-1415.students %}<a href="#{{ student.crowd.title | make_web_friendly }}"><img src="{{ site.baseurl }}/images/wise-1415/{{ student.crowd.thumb }}" alt="..." class="img-circle img-teaser"></a>{% endfor %}</div>
+            <p>For this project the students had to create a online survey to gather some data. This data should then be represented in an interactive graphic.</p>{% for student in site.data.wise-1415.students %}<a href="#{{ student.crowd.title | make_web_friendly }}"><img src="/images/wise-1415/{{ student.crowd.thumb }}" alt="..." class="img-circle img-teaser"></a>{% endfor %}</div>
     </div>
 </div>
 <div class="row">
@@ -128,8 +128,8 @@ title: winter semester 14/15
         {% for student in site.data.wise-1415.students %}
         <div class="media project-crowd well" id="{{ student.crowd.title | make_web_friendly }}">
             <a href="{{ student.crowd.result_url }}" class="media-left">
-            <img alt=" " src="{{ site.baseurl }}/images/wise-1415/{{ student.crowd.image }}" class="image hidden-xs">
-            <img alt=" " src="{{ site.baseurl }}/images/wise-1415/{{ student.crowd.thumb }}" class="thumb hidden-sm hidden-md hidden-lg ">
+            <img alt=" " src="/images/wise-1415/{{ student.crowd.image }}" class="image hidden-xs">
+            <img alt=" " src="/images/wise-1415/{{ student.crowd.thumb }}" class="thumb hidden-sm hidden-md hidden-lg ">
             </a>
             <div class="media-body">
                 <a href="{{ student.crowd.result_url }}"><h4 class="media-heading">{{ student.crowd.title }}</h4></a>
@@ -149,7 +149,7 @@ title: winter semester 14/15
         <div class="media well">
             <h2>Physical Bits</h2>
            <p> Finding binary states in the physical world was the first part of this project. The second part was to display this state change with only one flipdot.</p>
-               {% for student in site.data.wise-1415.students %}{% for thumb in student.bits.thumb %}<a href="#{{ student.bits.title  | make_web_friendly }}"><img src="{{ site.baseurl }}/images/wise-1415/{{ thumb }}" alt="..." class="img-circle img-teaser"></a>{% endfor %}{% endfor %}</div>
+               {% for student in site.data.wise-1415.students %}{% for thumb in student.bits.thumb %}<a href="#{{ student.bits.title  | make_web_friendly }}"><img src="/images/wise-1415/{{ thumb }}" alt="..." class="img-circle img-teaser"></a>{% endfor %}{% endfor %}</div>
     </div>
 </div>
 <div class="row">
@@ -157,8 +157,8 @@ title: winter semester 14/15
         {% for student in site.data.wise-1415.students %}
         <div class="media project-bits well" id="{{ student.bits.title | make_web_friendly }}">
             <a href="{{ student.bits.video_url }}" class="media-left">
-            <img alt=" " src="{{ site.baseurl }}/images/wise-1415/{{ student.bits.images[0] }}" class="image hidden-xs">
-            <img alt=" " src="{{ site.baseurl }}/images/wise-1415/{{ student.bits.thumb[0] }}" class="thumb hidden-sm hidden-md hidden-lg "></a>
+            <img alt=" " src="/images/wise-1415/{{ student.bits.images[0] }}" class="image hidden-xs">
+            <img alt=" " src="/images/wise-1415/{{ student.bits.thumb[0] }}" class="thumb hidden-sm hidden-md hidden-lg "></a>
             <div class="media-body">
                 <a href="{{ student.bits.video_url }}"><h4 class="media-heading">{{ student.bits.title }}</h4></a>
                 <h5>by <a href="#{{ student.github }}">{{ student.author }}</a></h5>
