@@ -4,8 +4,7 @@
 
 [build.environment]
   JEKYLL_ENV = "production"
-  NETLIFY_USE_BOWER = "false"
-  NETLIFY_USE_NPM = "false"
+
 [context.production]
   command = "jekyll build"
 
